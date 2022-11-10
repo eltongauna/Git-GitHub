@@ -1,0 +1,38 @@
+Lista de comandos do GIT e GITHUB
+
+git init - inicia um repositório do GIT
+git status - mostra o status do repositório
+git add <arquivo> - adiciona um arquivo para ser enviado (commit)
+git add . - adiciona a pasta toda para ser enviada (commit)
+git config --local user.name "Seu nome aqui" - define seu nome nas configurações locais
+git config --local user.email "seu@email.aqui" - define seu email nas configurações locais
+git config --global user.name "Seu nome aqui" - define seu nome nas configurações globais
+git config --global user.email "seu@email.aqui" - define seu email nas configurações globais
+git rm - remove o arquivo, deixando de ser monitorado
+git commit -m "seu comentário aqui" - envia para o GIT o arquivo ou pasta selecionada
+git log - informações sobre as alterações
+git log --oneline - mostra em apenas uma linha
+git log -p - mostra mais informações, inclusive o que mudou nos arquivos
+git log --help - mostra mais opções para o log
+arquivo .gitignore - arquivo que lista arquivos e pastas a serem ignoradas pelo git
+git init --bare - inicia um servidor apenas com alterações de código. Não possui cópia do código
+git remote - lista todos os servidores conhecidos
+git remote add "nome" <caminho> - adiciona o servidor ao projeto
+git clone <caminho> <nomeDaPasta> - adiciona o caminho do servidor para trazer os dados dele.
+git push <nomedoServidor> <branch> - envia os dados locais para o servidor. 
+git remote rename <nome1> <nome2> - altera o nome do servidor local
+git pull <nomedoServidor> <branch> - copia os dados do servidor para a pasta local
+git branch <nome> - cria uma nova branch 
+git branch - lista as branches existentes
+git checkout <nomeDoBranch> - altera entre as branches
+git checkout -b <nomeDoBranch> - altera e cria uma nova branch em um unico codigo
+git merge <branch> - junta as alteraçoes de 2 branches
+git rebase <branch> - atualiza a branch atual com as alterações de outra Branch
+git checkout -- <nome do arquivo> - desfaz qualquer alteração antes do commit
+git revet <hash do commit> - desfaz um commit já realizado.
+git stash - salva uma alteração para posterior commit
+git stash list - mostra uma lista de salvos
+git stash pop - tras as alterações e exclui o stash. Deixa pronto para commit.
+git diff - mostra as alterações efetuadas antes do commit
+git diff <hashInicial>..<hashFinal> - mostra todas as alterações entre os 2 hashes, que já foram comitadas
+git tag -a <nomeDaVersao> - cria uma versão de release, que não pode ser modificada.
